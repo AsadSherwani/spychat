@@ -23,15 +23,17 @@ class Spy:
 spy = Spy("Asad Ullah Khan", "Mr.", 21, 4.5)
 
 #####existing friends
-friend_one = Spy("Kriti", "Ms.", 21, 4.1)
-friend_two = Spy("Jake", "Mr.", 21, 4.2)
-friend_three = Spy("Ryan", "Mr.", 20, 4)
+#friend_one = Spy("Kriti", "Ms.", 21, 4.1)
+#friend_two = Spy("Jake", "Mr.", 21, 4.2)
+#friend_three = Spy("Ryan", "Mr.", 20, 4)
 
-Friends = [friend_one, friend_two, friend_three]
+#Friends = [friend_one, friend_two, friend_three]
 
 #####chat class
 class ChatMessage:
-    def __init__(self, message, sent_by_me):
+    def __init__(self, spy_name, friend_name, message, time, sent_by_me):
+        self.spy_name = spy_name
+        self.friend_name = friend_name
         self.message = message
-        self.time = datetime.now()
+        self.time = time
         self.sent_by_me = sent_by_me
